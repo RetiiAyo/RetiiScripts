@@ -40,3 +40,4 @@ syn.queue_on_teleport([[
 
 --[[ Script ]]
 
+local id = game.PlaceId
