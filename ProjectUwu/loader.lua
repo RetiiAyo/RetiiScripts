@@ -20,24 +20,10 @@ Yb,  88      `8b                                           I8  Yb, `88        88
 ProjectUwu - Loader # Retii#4208
 
 ]]
-print("ProjectUwu is now loading..")
 
-local database = loadstring(game:HtppGet("https://raw.githubusercontent.com/RetiiAyo/RetiiScripts/main/ProjectUwu/database.lua"))()
+-- [[ Script ]]
 
-print("ProjectUwu Loaded! version "..database["Version"]..". Executed on "..tostring(indetifyexecutor()))
-
--- [[ Checking ]]
-
-if not syn then
-  return warn("[ProjectUwu]: Your executor does not have 'syn' module. Get help or install a better one.")
-end
-
---[[ Teleport ]]
-
-syn.queue_on_teleport([[
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/RetiiAyo/RetiiScripts/main/ProjectUwu/loader.lua"))()
-]])
-
---[[ Script ]]
-
-local id = game.PlaceId
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RetiiAyo/RetiiScripts/main/ProjectUwu/core/load.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RetiiAyo/RetiiScripts/main/ProjectUwu/core/check.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RetiiAyo/RetiiScripts/main/ProjectUwu/core/queue.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RetiiAyo/RetiiScripts/main/ProjectUwu/core/main.lua"))()
