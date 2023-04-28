@@ -30,7 +30,7 @@ end
 --[[ Teleport ]]
 
 sy.queue_on_teleport([[
-  loadstring(game:HttpGet(""))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/RetiiAyo/RetiiScripts/main/ProjectUwu/loader.lua"))()
 ]])
 
 --[[ Script ]]
